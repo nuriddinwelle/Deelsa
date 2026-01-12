@@ -67,6 +67,12 @@ export default function Home() {
                 Siz real ROI va haqiqiy mijozni ko‘rasiz.
               </p>
             </div>
+             <div className="bg-white p-6 rounded-xl shadow">
+              <h3 className="font-semibold text-lg mb-2">4. Doimiy auto marketing</h3> 
+              <p className="text-gray-600">
+               CRM + SMS/Telegram chegirmali kod xabar 
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -83,8 +89,8 @@ export default function Home() {
           </p>
 
           <div className="space-y-2">
-            <p>📩 Email: example@gmail.com</p>
-            <p>💬 Telegram: @username</p>
+            <p>📩 Email: nuriddinmeyliyev04@gmail.com</p>
+            <p>💬 Telegram: @sayihin</p>
           </div>
         </div>
       </section>
