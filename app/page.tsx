@@ -1,24 +1,56 @@
+"use client";
+import { useEffect } from "react";
+export const dynamic = "force-dynamic";
 export default function Home() {
+  useEffect(() => {
+  const sections = document.querySelectorAll<HTMLElement>(".animate-fade-up");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          (entry.target as HTMLElement).classList.add("opacity-100");
+        }
+      });
+    },
+    { threshold: 0.2 }
+  );
+
+  sections.forEach((section) => observer.observe(section));
+
+  return () => observer.disconnect();
+}, []);
   return (
     <main className="font-sans text-gray-800">
       
       {/* HERO */}
-      <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-600 to-pink-500 text-white">
+      <section className="
+  min-h-screen flex items-center justify-center
+  bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-500
+  text-white
+  animate-fade-up
+">
         <div className="max-w-3xl text-center px-4">
-          <h1 className="text-5xl font-bold mb-6">
+          <h1 className="text-6xl font-extrabold mb-6 tracking-tight">
             Influencer marketing orqali real mijoz olib kelamiz
           </h1>
           <p className="text-lg mb-8 opacity-90">
             Post emas — natija. Promo code orqali kelgan mijozlarni aniq ko‘rasiz.
+            Va biznesingiz marketingini CRM orqali avtomatlashtiring.
           </p>
-          <button className="bg-white text-purple-600 px-8 py-4 rounded-xl font-semibold shadow-lg hover:bg-gray-100 transition">
+          <button className="
+  bg-white text-purple-600 px-8 py-4 rounded-2xl font-semibold
+  shadow-xl
+  transition-all duration-300
+  hover:scale-110 hover:shadow-2xl
+">
             Bepul konsultatsiya
           </button>
         </div>
       </section>
 
       {/* MUAMMO */}
-      <section className="py-20 bg-gray-50">
+        <section className="py-20 bg-gray-50 animate-fade-up animate-delay-200">
         <div className="max-w-3xl mx-auto text-center px-4">
           <h2 className="text-4xl font-bold mb-4">Muammo</h2>
           <p className="text-gray-600 text-lg">
@@ -29,7 +61,7 @@ export default function Home() {
       </section>
 
       {/* YECHIM */}
-      <section className="py-20 bg-white">
+          <section className="py-20 bg-white animate-fade-up animate-delay-400">
         <div className="max-w-3xl mx-auto text-center px-4">
           <h2 className="text-4xl font-bold mb-4">Yechim</h2>
           <p className="text-gray-600 text-lg">
@@ -40,8 +72,14 @@ export default function Home() {
       </section>
 
       {/* QANDAY ISHLAYDI */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-4xl mx-auto px-4">
+<section className="py-20 bg-gray-50 animate-fade-up animate-delay-600">
+        <div className="
+  bg-white p-8 rounded-2xl
+  border border-gray-100
+  shadow-lg
+  transition-all duration-300
+  hover:-translate-y-3 hover:shadow-2xl
+">
           <h2 className="text-4xl font-bold text-center mb-10">
             Qanday ishlaydi
           </h2>
@@ -77,8 +115,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA + KONTAKT */}
-      <section className="py-20 bg-black text-white">
+      {/* CTA */}
+<section className="py-20 bg-black text-white animate-fade-up animate-delay-800">
         <div className="max-w-3xl mx-auto text-center px-4">
           <h2 className="text-4xl font-bold mb-6">
             Loyihani boshlashga tayyormisiz?
@@ -94,6 +132,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+export default function Home() 
+  return <h1>TEST ISHLAYAPTI</h1>
+
 
     </main>
   );
