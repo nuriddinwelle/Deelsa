@@ -25,12 +25,18 @@ export default function Home() {
       
       {/* HERO */}
       <section className="
-  min-h-screen flex items-center justify-center
-  bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-500
-  text-white
-  animate-fade-up
-">
-        <div className="max-w-3xl text-center px-4">
+          min-h-screen flex items-center justify-center
+          bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-500
+          text-white
+          animate-fade-up
+        ">
+        <div className="
+            glass
+            bg-gray-900-white/20
+            text-white
+            p-8 rounded-3xl
+            shadow-xl
+          ">
           <h1 className="text-6xl font-extrabold mb-6 tracking-tight">
             Influencer marketing orqali real mijoz olib kelamiz
           </h1>
@@ -85,27 +91,51 @@ export default function Home() {
           </h2>
 
           <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-white p-6 rounded-xl shadow">
+            <div className="
+                glass
+                p-6 rounded-2xl
+                shadow-lg
+                transition-all duration-300
+                hover:-translate-y-2 hover:shadow-2xl
+              ">
               <h3 className="font-semibold text-lg mb-2">1. Influencer</h3>
               <p className="text-gray-600">
                 Influencer sizning promo code bilan post joylaydi.
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-xl shadow">
+            <div className="
+                glass
+                p-6 rounded-2xl
+                shadow-lg
+                transition-all duration-300
+                hover:-translate-y-2 hover:shadow-2xl
+              ">
               <h3 className="font-semibold text-lg mb-2">2. Mijoz</h3>
               <p className="text-gray-600">
                 Mijoz promo code orqali keladi va harakati yozib olinadi.
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-xl shadow">
+            <div className="
+                glass
+                p-6 rounded-2xl
+                shadow-lg
+                transition-all duration-300
+                hover:-translate-y-2 hover:shadow-2xl
+              ">
               <h3 className="font-semibold text-lg mb-2">3. Natija</h3>
               <p className="text-gray-600">
                 Siz real ROI va haqiqiy mijozni ko‘rasiz.
               </p>
             </div>
-             <div className="bg-white p-6 rounded-xl shadow">
+             <div className="
+                glass
+                p-6 rounded-2xl
+                shadow-lg
+                transition-all duration-300
+                hover:-translate-y-2 hover:shadow-2xl
+              ">
               <h3 className="font-semibold text-lg mb-2">4. Doimiy auto marketing</h3> 
               <p className="text-gray-600">
                CRM + SMS/Telegram chegirmali kod xabar 
@@ -132,8 +162,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-export default function Home() 
-  return <h1>TEST ISHLAYAPTI</h1>
 
 
     </main>
