@@ -26,30 +26,40 @@ export default function Home() {
       {/* HERO */}
       <section className="
           min-h-screen flex items-center justify-center
-          bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-500
+          bg-linear-to-br from-indigo-600 via-purple-600 to-pink-500
           text-white
-          animate-fade-up
-        ">
+          animate-fade-up">
+
         <div className="
             glass
             bg-gray-900-white/20
-            text-white
-            p-8 rounded-3xl
-            shadow-xl
-          ">
-          <h1 className="text-6xl font-extrabold mb-6 tracking-tight">
+            text-black text-center
+            p-6 sm:p-8 rounded-3xl
+            shadow-xl ">
+              
+          <h1 className="
+              text-4xl
+              sm:text-5xl
+              md:text-6xl
+              lg:text-7xl
+              font-extrabold
+              tracking-tight
+              leading-tight">
             Influencer marketing orqali real mijoz olib kelamiz
           </h1>
-          <p className="text-lg mb-8 opacity-90">
+          <p className="
+            text-base
+            sm:text-lg
+            leading-relaxed
+            opacity-90">
             Post emas — natija. Promo code orqali kelgan mijozlarni aniq ko‘rasiz.
             Va biznesingiz marketingini CRM orqali avtomatlashtiring.
           </p>
           <button className="
-  bg-white text-purple-600 px-8 py-4 rounded-2xl font-semibold
-  shadow-xl
-  transition-all duration-300
-  hover:scale-110 hover:shadow-2xl
-">
+                bg-white text-black-600 px-8 py-4 rounded-2xl font-semibold
+                shadow-xl w-full sm:w-auto text-base
+                transition-all duration-300
+                hover:scale-110 hover:shadow-2xl">
             Bepul konsultatsiya
           </button>
         </div>
@@ -57,8 +67,8 @@ export default function Home() {
 
       {/* MUAMMO */}
         <section className="py-20 bg-gray-50 animate-fade-up animate-delay-200">
-        <div className="max-w-3xl mx-auto text-center px-4">
-          <h2 className="text-4xl font-bold mb-4">Muammo</h2>
+        <div className="max-w-3xl mx-auto text-center px-4 sm:px-6 md:px-8">
+          <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">Muammo</h2>
           <p className="text-gray-600 text-lg">
             Influencer reklama qiladi, lekin real mijoz kelgan-kelmaganini bilmaysiz.
             Reklama byudjeti ko‘pincha bekor ketadi.
@@ -69,7 +79,7 @@ export default function Home() {
       {/* YECHIM */}
           <section className="py-20 bg-white animate-fade-up animate-delay-400">
         <div className="max-w-3xl mx-auto text-center px-4">
-          <h2 className="text-4xl font-bold mb-4">Yechim</h2>
+          <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">Yechim</h2>
           <p className="text-gray-600 text-lg">
             Biz promo code va real tashrif orqali influencer reklamasini
             aniq o‘lchaymiz. Siz faqat natija uchun to‘laysiz.
@@ -80,25 +90,27 @@ export default function Home() {
       {/* QANDAY ISHLAYDI */}
 <section className="py-20 bg-gray-50 animate-fade-up animate-delay-600">
         <div className="
-  bg-white p-8 rounded-2xl
-  border border-gray-100
-  shadow-lg
-  transition-all duration-300
-  hover:-translate-y-3 hover:shadow-2xl
-">
-          <h2 className="text-4xl font-bold text-center mb-10">
+            bg-white p-8 rounded-2xl
+            border border-gray-100
+            shadow-lg text-center
+            transition-all duration-300
+            hover:-translate-y-3 hover:shadow-2xl">
+          <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
             Qanday ishlaydi
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className=" grid grid-cols-1
+              sm:grid-cols-2
+              md:grid-cols-3
+              gap-6">
             <div className="
                 glass
                 p-6 rounded-2xl
-                shadow-lg
+                shadow-md
                 transition-all duration-300
                 hover:-translate-y-2 hover:shadow-2xl
               ">
-              <h3 className="font-semibold text-lg mb-2">1. Influencer</h3>
+              <h3 className="text-xl font-semibold mb-2">1. Influencer</h3>
               <p className="text-gray-600">
                 Influencer sizning promo code bilan post joylaydi.
               </p>
@@ -107,7 +119,7 @@ export default function Home() {
             <div className="
                 glass
                 p-6 rounded-2xl
-                shadow-lg
+                shadow-md
                 transition-all duration-300
                 hover:-translate-y-2 hover:shadow-2xl
               ">
@@ -120,7 +132,7 @@ export default function Home() {
             <div className="
                 glass
                 p-6 rounded-2xl
-                shadow-lg
+                shadow-md
                 transition-all duration-300
                 hover:-translate-y-2 hover:shadow-2xl
               ">
@@ -129,16 +141,28 @@ export default function Home() {
                 Siz real ROI va haqiqiy mijozni ko‘rasiz.
               </p>
             </div>
+            <div className="
+                glass
+                p-6 rounded-2xl
+                shadow-md
+                transition-all duration-300
+                hover:-translate-y-2 hover:shadow-2xl
+              ">
+              <h3 className="font-semibold text-lg mb-2">4. Influencer tanlovi</h3> 
+              <p className="text-gray-600">
+               Biznes kerakli influencer’ni marketplace orqali tanlash imkoni.
+              </p>
+            </div>
              <div className="
                 glass
                 p-6 rounded-2xl
-                shadow-lg
+                shadow-md
                 transition-all duration-300
                 hover:-translate-y-2 hover:shadow-2xl
               ">
               <h3 className="font-semibold text-lg mb-2">4. Doimiy auto marketing</h3> 
               <p className="text-gray-600">
-               CRM + SMS/Telegram chegirmali kod xabar 
+               CRM + SMS/Telegram chegirmali kod xabarlari.
               </p>
             </div>
           </div>
